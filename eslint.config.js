@@ -16,7 +16,7 @@ export default [
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 2025,
       globals: globals.browser,
       parser: tsparser,
       parserOptions: {
