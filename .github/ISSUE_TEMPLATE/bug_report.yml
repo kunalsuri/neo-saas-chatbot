@@ -1,0 +1,73 @@
+# Copyright (c) 2026 Kunal Suri (CEA LIST). All rights reserved.
+name: 🐛 Bug Report
+description: File a report to help us find and fix a bug.
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill out the form below as completely as possible to help us diagnose and fix the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what went wrong...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Logs
+      description: If applicable, add screenshots, video recordings, or console logs to help explain your problem.
+      placeholder: Paste images or log output here...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: environment
+    attributes:
+      label: Environment Setup
+      description: Which environment settings or local tools are you running?
+      options:
+        - label: Local Ollama
+        - label: Local LM Studio
+        - label: Cloud APIs (OpenAI/Gemini)
+        - label: Windows OS
+        - label: Linux / macOS
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here (e.g. browser versions, node version).
+      placeholder: Any other info...
+    validations:
+      required: false
