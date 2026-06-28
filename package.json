@@ -14,7 +14,7 @@
     "setup:windows": "powershell -ExecutionPolicy Bypass -File scripts/setup-project.ps1",
     "type-check": "tsc --noEmit --project tsconfig.dev.json",
     "type-check:strict": "tsc --noEmit",
-    "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives",
+    "lint": "eslint . --report-unused-disable-directives",
     "lint:fix": "npm run lint -- --fix",
     "test": "vitest",
     "test:ui": "vitest --ui",
