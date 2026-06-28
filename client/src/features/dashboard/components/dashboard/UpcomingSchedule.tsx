@@ -8,7 +8,8 @@ import { Card } from "@/shared/components/ui/card";
 import { Button } from "@/shared/components/ui/button";
 import { Skeleton } from "@/shared/components/ui/skeleton";
 import { useLocation } from "wouter";
-import { Calendar, Image as ImageIcon, Instagram } from "lucide-react";
+import { Calendar, Image as ImageIcon } from "lucide-react";
+import { Instagram } from "@/shared/components/ui/brand-icons";
 
 export function UpcomingSchedule() {
   const [, navigate] = useLocation();

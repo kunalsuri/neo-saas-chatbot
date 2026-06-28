@@ -15,7 +15,7 @@ export const externals = [
   
   // Build tools
   'vite.config.ts', '@babel/preset-typescript/package.json',
-  'lightningcss', 'fsevents',
+  'lightningcss', 'fsevents', '@tailwindcss/vite', '@tailwindcss/oxide',
   
   // Client-side libraries (shouldn't be in server bundle)
   '@tanstack/react-query', 'react', 'react-dom', 'framer-motion',

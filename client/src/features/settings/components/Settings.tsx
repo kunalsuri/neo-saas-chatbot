@@ -18,7 +18,7 @@ import { useUser } from "@/features/user-management/components/UserContext";
 import { UserProfileCard } from "@/features/user-management/components/UserProfileCard";
 import { SentryTestPanel } from "./SentryTestPanel";
 import { CDNConfigPanel } from "./CDNConfigPanel";
-import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Twitter, Linkedin } from "@/shared/components/ui/brand-icons";
 
 export default function Settings() {
   const { toast } = useToast();

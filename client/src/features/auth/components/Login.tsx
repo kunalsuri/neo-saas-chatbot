@@ -10,7 +10,8 @@ import { Input } from "@/shared/components/ui/input";
 import { Label } from "@/shared/components/ui/label";
 import { useToast } from "@/shared/hooks/use-toast";
 import { useAuth } from "./AuthContext";
-import { Sparkles, Instagram, Calendar, BarChart3, ArrowLeft } from "lucide-react";
+import { Sparkles, Calendar, BarChart3, ArrowLeft } from "lucide-react";
+import { Instagram } from "@/shared/components/ui/brand-icons";
 
 interface LoginProps {
   onBack?: () => void;
