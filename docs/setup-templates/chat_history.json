@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chat_001",
+    "title": "Welcome Chat",
+    "messages": [
+      {
+        "id": "msg_001",
+        "role": "user",
+        "content": "Hello!",
+        "timestamp": "2026-06-28T12:00:00.000Z"
+      },
+      {
+        "id": "msg_002_assistant",
+        "role": "assistant",
+        "content": "Hello! I am your AI assistant. How can I help you today?",
+        "timestamp": "2026-06-28T12:00:02.000Z",
+        "metadata": {
+          "model": "llama3",
+          "provider": "ollama"
+        }
+      },
+      {
+        "id": "msg_003",
+        "role": "user",
+        "content": "Tell me a joke.",
+        "timestamp": "2026-06-28T12:00:10.000Z"
+      },
+      {
+        "id": "msg_004_assistant",
+        "role": "assistant",
+        "content": "Why don't scientists trust atoms? Because they make up everything!",
+        "timestamp": "2026-06-28T12:00:11.000Z",
+        "metadata": {
+          "model": "llama3",
+          "provider": "ollama"
+        }
+      }
+    ],
+    "createdAt": "2026-06-28T12:00:00.000Z",
+    "updatedAt": "2026-06-28T12:00:11.000Z"
+  }
+]

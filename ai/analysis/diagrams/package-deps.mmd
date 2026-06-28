@@ -1,0 +1,37 @@
+%% Copyright (c) 2026 Kunal Suri (CEA LIST). All rights reserved.
+%% [inferred] drafted by /cold-start 2026-06-28 @ commit f6c2a30. Audit before trusting.
+%% Module/package dependency graph. Arrows = "imports / depends on".
+graph TD
+  subgraph client["client/src — React 18 + Vite"]
+    cMain["main.tsx / App.tsx<br/>(wouter routing, providers)"]
+    cFeat["features/*<br/>auth, chatbot, dashboard,<br/>model-management, settings,<br/>prompt-local, summary, translate,<br/>text-manipulation, user-management"]
+    cShared["shared/<br/>ui (shadcn), api, hooks, layout"]
+    cLib["lib/<br/>queryClient, sentry, utils"]
+    cMain --> cFeat
+    cFeat --> cShared
+    cFeat --> cLib
+    cFeat --> cShared
+  end
+
+  subgraph server["server/ — Express + TypeScript"]
+    sIndex["index.ts<br/>(bootstrap)"]
+    sRoutes["routes.ts<br/>(mount /api/*)"]
+    sFeat["features/*<br/>auth, chat, translation,<br/>prompt-improver, content,<br/>model-management, text-manipulation,<br/>user-management, user-activity, monitoring"]
+    sShared["shared/<br/>middleware, config, utils, types"]
+    sStorage["storage.ts<br/>(JSON-file IStorage)"]
+    sIndex --> sRoutes
+    sRoutes --> sFeat
+    sFeat --> sShared
+    sFeat --> sStorage
+    sStorage --> data[("data/*.json")]
+  end
+
+  shared["shared/ (@shared)<br/>schema.ts (Drizzle types),<br/>validation.ts, types/*"]
+
+  cFeat -. "REST /api/* (JSON)" .-> sRoutes
+  cShared --> shared
+  sFeat --> shared
+  sStorage --> shared
+
+  ext["External AI providers<br/>OpenAI · Google AI · Ollama · LM Studio"]
+  sFeat -. "HTTP" .-> ext

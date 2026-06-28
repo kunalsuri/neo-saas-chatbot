@@ -1,0 +1,13 @@
+{
+  "defaultUser": {
+    "id": "admin-001",
+    "username": "admin",
+    "email": "admin@example.com",
+    "password": "$2b$10$rQJ9vQJ9vQJ9vQJ9vQJ9vOJ9vQJ9vQJ9vQJ9vQJ9vQJ9vQJ9vQJ9vQ",
+    "plan": "premium",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "lastLogin": "2026-06-28T00:00:00.000Z"
+  },
+  "sessions": {},
+  "csrfTokens": {}
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "admin-001",
+    "username": "admin",
+    "name": "System Administrator",
+    "email": "admin@example.com",
+    "password": "$2b$12$ao8Ts71f4u5jLRpAgtygEOAGPpnO8mRkAR10kNbhpQ6tiON00KcOO",
+    "role": "admin",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    "plan": "premium",
+    "bio": "System administrator and platform architect. Responsible for maintaining the AI chatbot infrastructure.",
+    "company": "ACME Corp",
+    "location": "San Francisco, CA",
+    "website": "https://example.com",
+    "emailVerified": true,
+    "preferences": {
+      "theme": "dark",
+      "language": "en",
+      "notifications": {
+        "email": true,
+        "push": true,
+        "marketing": false,
+        "security": true
+      }
+    },
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "lastLogin": "2026-06-28T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "user-001",
+    "username": "john.doe",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "$2b$12$s7TW7Fy9k0bNkCbjRpE4quMBJSWj5.auc4m919JhRQuYfmLs.WFZG",
+    "role": "pro_user",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    "plan": "pro",
+    "bio": "Developer exploring AI chatbot integration.",
+    "company": "ACME Corp",
+    "location": "Boston, MA",
+    "website": "https://example.com",
+    "emailVerified": true,
+    "preferences": {
+      "theme": "dark",
+      "language": "en",
+      "notifications": {
+        "email": true,
+        "push": true,
+        "marketing": true,
+        "security": true
+      }
+    },
+    "createdAt": "2026-01-15T10:30:00.000Z",
+    "lastLogin": "2026-06-28T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "user-002",
+    "username": "jane.smith",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMaQJqO8/iGPioGx/THUiGoQF2",
+    "role": "free_user",
+    "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+    "plan": "free",
+    "bio": "Designer reviewing conversational interface layouts.",
+    "company": "ACME Corp",
+    "location": "Seattle, WA",
+    "website": "https://example.com",
+    "emailVerified": false,
+    "preferences": {
+      "theme": "light",
+      "language": "en",
+      "notifications": {
+        "email": false,
+        "push": false,
+        "marketing": false,
+        "security": true
+      }
+    },
+    "createdAt": "2026-03-22T14:15:00.000Z",
+    "lastLogin": "2026-06-28T00:00:00.000Z",
+    "status": "active"
+  }
+]

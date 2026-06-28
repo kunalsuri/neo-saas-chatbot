@@ -1,0 +1,19 @@
+{
+  "improvements": [
+    {
+      "id": "9a6cf187-ade9-4bf3-b036-b1dbdc515099",
+      "original": "tell me about cats",
+      "improved": "# ENHANCED PROMPT\n\n**ROLE & CONTEXT**\nYou are a veterinary assistant writing for a general audience.\n\n**OBJECTIVE**\nWrite a comprehensive summary of domestic cat behaviors, diets, and common care practices for new owners.\n\n**REQUIREMENTS**\n- Outline dietary needs for kittens vs. adult cats.\n- Explain common behavioral patterns (purring, scratching).\n- Suggest a daily checklist for care.",
+      "model": "llama3",
+      "provider": "ollama",
+      "mode": "enhancement",
+      "outputFormat": "text",
+      "tokens": 120,
+      "confidence": 0.9,
+      "userId": "local-user",
+      "timestamp": "2026-06-28T12:00:00.000Z",
+      "isBookmarked": false,
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+%% Copyright (c) 2026 Kunal Suri (CEA LIST). All rights reserved.
+%% [inferred] drafted by /cold-start 2026-06-28 from shared/schema.ts. Audit before trusting.
+%% Core domain types + relationships. NOTE: tables are defined with Drizzle/pgTable but
+%% runtime persistence is JSON files (server/storage.ts) — these are the data SHAPES,
+%% the FK arrows are schema references() not enforced by a live DB. [inferred]
+erDiagram
+  USERS ||--o{ QUOTES : "owns (quotes.userId)"
+  USERS ||--o{ POSTS : "owns (posts.userId)"
+  POSTS ||--o{ ANALYTICS : "measured by (analytics.postId)"
+  TEMPLATES }o..o{ POSTS : "styles (no FK in schema)"
+
+  USERS {
+    string id PK "gen_random_uuid"
+    string username UK
+    string email UK
+    string password "bcrypt"
+    string plan "free|pro|premium|enterprise"
+    string role "RoleSchema (RBAC)"
+    timestamp createdAt
+  }
+  QUOTES {
+    string id PK
+    string userId FK
+    string text
+    string author
+    string category
+  }
+  POSTS {
+    string id PK
+    string userId FK
+    string title
+    string content
+    string status "draft|scheduled|published"
+    string platform "instagram|..."
+    timestamp scheduledFor
+    timestamp publishedAt
+    jsonb metadata
+  }
+  TEMPLATES {
+    string id PK
+    string name
+    boolean isPublic
+    integer usageCount
+  }
+  ANALYTICS {
+    string id PK
+    string postId FK
+    string platform
+    integer likes
+    integer shares
+    integer views
+    integer engagementRate
+  }
+  CHAT_SESSION {
+    string sessionId "from shared/types/api"
+    string note "persisted to data/chat_history.json"
+  }

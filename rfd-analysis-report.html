@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Catalog - saas-chatbot-ai</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { background: #2563eb; color: white; padding: 30px 0; margin-bottom: 30px; }
+    h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .meta { opacity: 0.9; }
+    .summary { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+    .stat { background: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; }
+    .stat-value { font-size: 2em; font-weight: bold; color: #2563eb; }
+    .stat-label { color: #64748b; font-size: 0.9em; }
+    .section { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .feature { border-left: 3px solid #2563eb; padding: 15px; margin: 10px 0; background: #f8fafc; }
+    .feature-name { font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+    .feature-path { color: #64748b; font-size: 0.9em; font-family: monospace; }
+    .tech-list { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
+    .tech-badge { background: #2563eb; color: white; padding: 5px 12px; border-radius: 4px; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Feature Catalog</h1>
+      <div class="meta">
+        <strong>saas-chatbot-ai</strong> | 
+        Generated: 10/11/2025, 5:06:58 PM | 
+        Version: 1.0.0
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="summary">
+      <h2>Summary</h2>
+      <div class="stats">
+        <div class="stat"><div class="stat-value">1</div><div class="stat-label">Pages</div></div>
+        <div class="stat"><div class="stat-value">173</div><div class="stat-label">Components</div></div>
+        <div class="stat"><div class="stat-value">0</div><div class="stat-label">Services</div></div>
+        <div class="stat"><div class="stat-value">37</div><div class="stat-label">Hooks</div></div>
+        <div class="stat"><div class="stat-value">23</div><div class="stat-label">Utilities</div></div>
+        <div class="stat"><div class="stat-value">25</div><div class="stat-label">Types</div></div>
+      </div>
+      
+      <h3>Key Technologies</h3>
+      <div class="tech-list">
+        <span class="tech-badge">Wouter</span><span class="tech-badge">React</span><span class="tech-badge">TanStack Query</span><span class="tech-badge">React Query</span><span class="tech-badge">Zod</span><span class="tech-badge">Vite</span><span class="tech-badge">React Router</span><span class="tech-badge">Radix UI</span><span class="tech-badge">TypeScript</span><span class="tech-badge">Express.js</span><span class="tech-badge">Drizzle ORM</span>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Components (173)</h2>
+      
+        <div class="feature">
+          <div class="feature-name">App</div>
+          <div class="feature-path">client/src/App.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">ErrorBoundary</div>
+          <div class="feature-path">client/src/components/ErrorBoundary.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">HistoryList</div>
+          <div class="feature-path">client/src/components/HistoryList.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">AuthContext</div>
+          <div class="feature-path">client/src/features/auth/components/AuthContext.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">Login</div>
+          <div class="feature-path">client/src/features/auth/components/Login.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">RoleGuard</div>
+          <div class="feature-path">client/src/features/auth/components/guards/RoleGuard.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">RouteGuard</div>
+          <div class="feature-path">client/src/features/auth/components/guards/RouteGuard.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">AIChatBotExternal</div>
+          <div class="feature-path">client/src/features/chatbot/components/AIChatBotExternal.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">AIChatBotLocal</div>
+          <div class="feature-path">client/src/features/chatbot/components/AIChatBotLocal.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">ChatHistory</div>
+          <div class="feature-path">client/src/features/chatbot/components/ChatHistory.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">ExternalAIModelStatus</div>
+          <div class="feature-path">client/src/features/chatbot/components/ai/ExternalAIModelStatus.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">LocalAIModelStatus</div>
+          <div class="feature-path">client/src/features/chatbot/components/ai/LocalAIModelStatus.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">VirtualChatList</div>
+          <div class="feature-path">client/src/features/chatbot/components/chat/VirtualChatList.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">ChatBubble</div>
+          <div class="feature-path">client/src/features/chatbot/components/ui/chat-bubble.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">ChatInput</div>
+          <div class="feature-path">client/src/features/chatbot/components/ui/chat-input.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">Dashboard</div>
+          <div class="feature-path">client/src/features/dashboard/components/Dashboard.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">Landing</div>
+          <div class="feature-path">client/src/features/dashboard/components/Landing.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">TermsOfService</div>
+          <div class="feature-path">client/src/features/dashboard/components/TermsOfService.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">PerformanceChart</div>
+          <div class="feature-path">client/src/features/dashboard/components/dashboard/PerformanceChart.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-name">PopularTemplates</div>
+          <div class="feature-path">client/src/features/dashboard/components/dashboard/PopularTemplates.tsx</div>
+          <p>Copyright 2025 Kunal Suri — Licensed under the Apache License 2.0 (see LICENSE file)</p>
+        </div>
+      
+      <p>... and 153 more</p>
+    </div>
+    
+    <div class="section">
+      <h2>Migration Guide</h2>
+      <p>This project contains 377 features across 1 pages, 173 components, 0 services, 37 hooks, 23 utilities, 25 type definitions, and 118 modules. The application follows a modern React architecture.</p>
+      <h3>Recommendations</h3>
+      <ol>
+        <li>Start by migrating type definitions and shared utilities first</li><li>Migrate services and API integrations before UI components</li><li>Test authentication and session management thoroughly in target environment</li><li>Verify all environment variables are properly configured</li><li>Run database migrations before deploying application code</li><li>Consider refactoring large files before migration to improve maintainability</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Build outputs
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Configuration files
+*.config.js
+*.config.ts
+vite.config.ts
+vitest.config.ts
+tailwind.config.ts
+
+# Test files and directories
+**/test/**
+**/tests/**
+**/*.test.ts
+**/*.test.tsx
+client/src/test/
+
+# Other files to temporarily ignore while you work on higher priorities
+client/src/shared/hooks/use-advanced-accessibility.ts
+client/src/shared/hooks/use-smart-memorization.ts
+client/src/shared/hooks/use-advanced-animations.ts

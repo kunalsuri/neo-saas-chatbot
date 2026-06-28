@@ -1,0 +1,28 @@
+%% Copyright (c) 2026 Kunal Suri (CEA LIST). All rights reserved.
+%% [inferred] drafted by /cold-start 2026-06-28 @ commit f6c2a30. Audit before trusting.
+%% The main boundary: browser SPA <-> Express API.
+%% PROTOCOL [verified in code]: REST/JSON over HTTP, all routes under /api/* (server/routes.ts).
+%% Auth [verified]: express-session cookie + Passport-local; CSRF token middleware (addCsrfToken).
+%% Session store [verified]: in-memory MemoryStore (NOT Postgres), see server/routes.ts.
+sequenceDiagram
+  autonumber
+  participant B as Browser SPA<br/>(React, TanStack Query,<br/>secureApi + csrf util)
+  participant E as Express app<br/>(server/index.ts)
+  participant M as Middleware<br/>(session, CSRF, auth,<br/>logging, sentry)
+  participant R as Feature router<br/>(/api/&lt;feature&gt;)
+  participant S as storage.ts<br/>(JSON files in data/)
+  participant AI as AI providers<br/>(OpenAI/Google/Ollama/LM Studio)
+
+  B->>E: HTTPS request /api/... (cookie + CSRF token)
+  E->>M: session + CSRF + auth checks
+  M->>R: dispatch to feature router
+  alt data read/write
+    R->>S: IStorage call
+    S-->>R: domain object (User/Post/ChatSession/...)
+  else AI inference
+    R->>AI: HTTP call (chat / translate / summarize / prompt)
+    AI-->>R: completion
+  end
+  R-->>B: JSON response
+  Note over B,E: Dev: Vite middleware serves SPA (server/vite.ts).<br/>Prod: serveStatic from dist/public.
+  Note over B,AI: WebSocket (ws dep) usage UNVERIFIED — needs human.

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "summary_001",
+    "prompt": "Summarize this text in one sentence.",
+    "content": "Artificial intelligence is a branch of computer science focused on building smart machines capable of performing tasks that typically require human intelligence. From self-driving cars to generative art, the impact of AI is expanding rapidly across industries.",
+    "summary": "Artificial intelligence focuses on creating machines that can perform tasks requiring human intelligence, and its applications are growing across many fields.",
+    "model": "llama3",
+    "provider": "ollama",
+    "timestamp": "2026-06-28T12:00:00.000Z",
+    "tokens": 80
+  }
+]
