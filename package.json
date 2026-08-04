@@ -147,7 +147,7 @@
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
     "jsdom": "^29.1.1",
-    "postcss": "^8.4.47",
+    "postcss": "^8.5.25",
     "supertest": "^7.2.2",
     "tailwindcss": "^4.3.1",
     "tailwindcss-animate": "^1.0.7",
